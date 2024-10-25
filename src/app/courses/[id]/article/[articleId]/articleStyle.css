@@ -1,0 +1,118 @@
+.article-container > h1 {
+  font-size: 62px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.article-container > h2 {
+  font-size: 42px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.article-container > h2::first-letter {
+  text-transform: uppercase;
+}
+.article-container p {
+  font-size: 11pt;
+}
+
+.article-container > blockquote {
+  margin: 50px 0px;
+}
+
+.article-container a {
+  color: blue;
+}
+
+.article-container img {
+  height: auto;
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 65vh;
+  /* margin: 50px auto 0px auto; */
+  /* margin-top: 50px; */
+  border-radius: 3px;
+}
+/* For Image inside the table */
+.article-container table img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.article-container video {
+  width: 90%;
+  height: auto;
+  max-height: 65vh;
+  margin: 70px auto; /* Prevent portrait videos from taking too much space */
+}
+
+.article-container iframe {
+  margin: 50px auto;
+  border-radius: 4px;
+  width: 90%;
+}
+/* For videos and IFrames(YOUTUBE VIDEOS)inside the table  */
+.article-container table video,
+.article-container table iframe {
+  margin: 0px;
+  width: 80%;
+  /* max-height: 50vh; */
+  border-radius: 4px;
+}
+
+.article-container td figure:has(iframe) {
+  margin: 0px;
+}
+
+.article-container figcaption {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  color: gray;
+  font-size: 14px;
+  /* margin: 4px auto 50px auto; */
+}
+
+.article-container code::before {
+  background-color: pink;
+}
+
+/* table styling */
+.article-container table {
+  /* width: 100%; */
+  border-collapse: collapse; /* Ensures no double borders */
+  /* margin: 20px 0; Space around the table */
+  font-size: 16px;
+  /* text-align: left; */
+  /* margin: 60px auto; */
+}
+
+/* Table headers */
+.article-container th,
+.article-container td {
+  /* padding: 12px 15px; Padding inside table cells */
+  border: 1px solid #dddddd; /* Light border around cells */
+  /* text-align: center; */
+}
+
+/* Table header row styling */
+.article-container th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+/* Alternate row colors (striped effect) */
+.article-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect on rows */
+.article-container tr:hover {
+  background-color: #f1f1f1;
+}
+.article-container .copy_code {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
